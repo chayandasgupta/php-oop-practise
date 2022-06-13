@@ -19,3 +19,13 @@ for($i = 1; $i <= $length; $i++)
 {
     echo $strValue[$i * -1];
 }
+
+echo "<br>";
+$name = 'chayan';
+$roll = 12;
+
+echo $name, $roll."<br>";
+
+printf("he is %s %s", $name, $roll);
+echo "<br>";
+echo($name), ($roll);
