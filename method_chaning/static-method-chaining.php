@@ -71,21 +71,21 @@ echo "<br>";
 
 class Oop
 {
-    public static $val;
+    public static $val; //20 + 10 -10 = 20
 
-    public static function init($var)
+    public static function init($var) //20
     {
         self::$val = $var;
         return new static;
     }
 
-    public static function add ($addNumber)
+    public static function add ($addNumber) //+10
     {
         self::$val += $addNumber;
         return new static;
     }
 
-    public static function minus ($minusNumber)
+    public static function minus ($minusNumber) // 10
     {
         self::$val -= $minusNumber;
         return new static;

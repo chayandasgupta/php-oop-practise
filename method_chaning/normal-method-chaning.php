@@ -7,16 +7,16 @@
 
 class StringUtility
 {
-    private $string;
-    private $search; 
+    private $string; //hello earth
+    private $search;
 
-    public function __construct($string)
+    public function __construct($string) 
     {
         $this->string = $string;  // Here string = "Hello World"
     }
     
     // This method for which keyword we search and store this keyword in search property
-    public function search($searchKey)
+    public function search($searchKey) // jeita search hisabe carchi world
     {
         $this->search = $searchKey;
         return $this;  // This line use for return StringUtility object
@@ -56,6 +56,6 @@ class StringUtility
     }
 }
 
-$obj = new StringUtility("Hello World");
-$obj->search('World')->replace('earth')->strLowerCase()->strUpperCase()->print();
+$obj = new StringUtility("Hello World"); 
+$obj->search('World')->replace('Earth')->strLowerCase()->strUpperCase()->print();
 ?>
